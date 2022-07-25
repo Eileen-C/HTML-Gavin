@@ -117,7 +117,7 @@
     display: block;
 } */
 
-.box1{
+/* .box1{
     width: 25%;
     height: 100px;
     background: #ffcc00;
@@ -143,4 +143,29 @@
     height: 100px;
     background: cyan;
     clear: both;
+} */
+
+.style1{
+    font-size: 0.5em;
+    vertical-align: top;
+}
+
+.style2{
+    font-size: 0.5em;
+    vertical-align: text-top;
+}
+
+.style3{
+    font-size: 0.5em;
+    vertical-align: bottom;
+}
+
+.style4{
+    font-size: 0.5em;
+    vertical-align: text-bottom;
+}
+
+.style5{
+    font-size: 0.5em;
+    vertical-align: middle;
 }

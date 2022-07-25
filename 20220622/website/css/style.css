@@ -110,6 +110,7 @@ h1{
 .more::after{
     content: url(/images/ico_arrow.png);
     margin-left: 5px;
+    vertical-align: middle;
 }
 
 
