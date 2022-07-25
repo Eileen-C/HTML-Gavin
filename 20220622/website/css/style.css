@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*視窗背景色設定*/
+body{
+    background-color: #fbf9cc;
+}
+
+/*連結顏色設定*/
+a{
+    color: #FF0000;
+
+}
+
+a:hover{
+    color: #fbf9cc;
+}
+
+/*頁首,導覽,頁尾的共通設定*/
+
+
+/*導覽樣式設定*/
+
+
+/*頁面標題設定*/
+@font-face{
+    font-family: 'Lobster';
+    src: url(../fonts/Lobster_Two/LobsterTwo-Regular.ttf);
+    src: url(../fonts/Lobster_Two/LobsterTwo-Bold.ttf);
+    src: url(../fonts/Lobster_Two/LobsterTwo-BoldItalic.ttf);
+    src: url(../fonts/Lobster_Two/LobsterTwo-Italic.ttf);
+}
+h1{
+    background: linear-gradient(to bottom, #6bb897, #4a9a78);
+    color: #ffffff;
+    width: 300px;
+    padding: 30px;
+    margin: 40px auto;
+    border: 5px solid #95dbbd;
+    border-radius: 50%;
+    font-size: 300%;
+    text-align: center;
+    line-height: 1em;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 3px 10px lemonchiffon;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+/*次標題設定*/
+h2{
+    color: #5fae8c;
+}
+
+/*小標題設定*/
+
+
+/*內容區塊邊框設定*/
+
+
+/*「更多介紹」連結設定*/
+
+
+/*連結圖示設定*/
+
+
+/*區塊間分隔*/
+
+
+/*文繞圖設定*/
+
+
+/*圓形圖片設定*/
+
+
+#top p{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+nav ul li{
+    background-color: #5fae8c;
+    border-radius: 15px;
+    padding: 10px 30px;
+}
