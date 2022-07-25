@@ -58,19 +58,26 @@
 
 /*  */
 
-body{
-    background: repeating-linear-gradient(to right, deepskyblue 10%, gray 90%);
-}
 
 div{
+    width: 500px;
+    height: 200px;
     font-size: 15pt;
     text-align: center;
     color: white;
-    padding: 30px;
-    margin-bottom: 10px;
+    line-height: 150px;
+    margin: 10px auto;
 }
 
-.linear1{
+.radial1{
+    background: radial-gradient(circle, red 25%, yellow 55%, green 20%);
+}
+
+.radial2{
+    background: radial-gradient(ellipse, red, yellow, green);
+}
+
+/* .linear1{
     background: linear-gradient(to bottom, yellow, green);
 }
 
@@ -88,4 +95,4 @@ div{
 
 .linear5{
     background: linear-gradient(to right, red, orange, yellow, green, blue, violet, purple);
-}
+} */
