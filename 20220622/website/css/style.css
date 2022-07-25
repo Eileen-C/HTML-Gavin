@@ -8,23 +8,39 @@
 
 /*視窗背景色設定*/
 body{
-    background-color: #fbf9cc;
+    background: #fbf9cc url(/images/bg.png) repeat-x;
 }
 
 /*連結顏色設定*/
 a{
     color: #FF0000;
-
-}
-
-a:hover{
-    color: #fbf9cc;
 }
 
 /*頁首,導覽,頁尾的共通設定*/
-
+header, nav, footer{
+    text-align: center;
+}
 
 /*導覽樣式設定*/
+
+.menu li{
+    display: inline-block;
+    width: 200px;
+    margin: 15px 10px 0px;
+}
+
+.menu a{
+    background-color: #4a9a78;
+    padding: 8px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 15px;
+}
+.menu a:hover{
+    color: #fbf9cc;
+}
 
 
 /*頁面標題設定*/
@@ -49,49 +65,69 @@ h1{
     font-family: 'Lobster', cursive;
     text-shadow: 2px 3px 10px lemonchiffon;
     box-shadow: 0px 0px 10px 0px black;
+    cursor: default;
 }
 
 /*次標題設定*/
-h2{
+#about h2,#plantsIntro h2, #profile h2{
     color: #5fae8c;
-    
+    border: 1px dotted #d0e35b;
+    border-left: 5px solid #d0e35b;    
+    margin: 20px 0px;
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px;
 }
 
 /*小標題設定*/
+#plantsIntro h3{
+    color: #ff705b;
+    background:#fbf9cc;
+    padding: 10px;
+    box-shadow: 0 0 5px 1px #ff705b inset;
+    border-radius: 10px;
+    margin: 15px 0px;
+}
 
+#plantsIntro img{
+    border-radius: 10px;
+}
 
 /*內容區塊邊框設定*/
-
+#content{
+    width: 960px;
+    background: white;
+    margin: 40px auto;
+    border: 1px solid #f9d0bc;
+    padding: 40px 60px;
+}
 
 /*「更多介紹」連結設定*/
-
+.more{
+    text-align: right;
+}
 
 /*連結圖示設定*/
+.more::after{
+    content: url(/images/ico_arrow.png);
+    margin-left: 5px;
+}
 
 
 /*區塊間分隔*/
 
 
 /*文繞圖設定*/
+.imgL{
+    float: left;
+    margin-right: 20px;
+}
+.imgR{
+    float: right;
+    margin-left: 20px;
+}
 
+.clear{
+    clear: both;
+}
 
 /*圓形圖片設定*/
-
-
-#top p{
-    text-align: center;
-    padding-bottom: 15px;
-}
-
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding-bottom: 20px;
-}
-
-nav ul li{
-    background-color: #5fae8c;
-    border-radius: 15px;
-    padding: 10px 30px;
-}
