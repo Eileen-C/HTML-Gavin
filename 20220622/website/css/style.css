@@ -105,17 +105,30 @@ h1{
 .more{
     text-align: right;
 }
+.more::after{
+    content: url(../images/ico_arrow.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
 
 /*連結圖示設定*/
-.more::after{
-    content: url(/images/ico_arrow.png);
+a[href^= "mailto:"]::after{
+    content: url(../images/ico_mail.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+a[href= "#"]::after{
+    content: url(../images/ico_blank.png);
     margin-left: 5px;
     vertical-align: middle;
 }
 
 
 /*區塊間分隔*/
-
+#content > section + section{
+    margin-top: 100px;
+}
 
 /*文繞圖設定*/
 .imgL{
@@ -131,4 +144,72 @@ h1{
     clear: both;
 }
 
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
 /*圓形圖片設定*/
+#profile img{
+    border-radius: 50px;
+}
+
+/* 表格設定 */
+.entryTable{
+    width: 100%;
+    border: 1px solid #f6bb9e;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.entryTable caption{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.entryTable th,
+.entryTable td{
+    border: 1px solid #f6bb9e;
+    padding: 10px 20px;
+}
+
+.entryTable th{
+    background: #fff0ee;
+    text-align: left;
+    /* em為字元單位 */
+    width: 10em; 
+}
+
+/* 表單文字欄位格式設定 */
+.entryTable input[type = "text"],
+.entryTable input[type = "email"],
+.entryTable textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    font-size: 1em;
+}
+
+/* 按鈕設定 */
+.entryBtns{
+    text-align: center;
+}
+
+.entryBtns input{
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    margin: 0 10px;
+    border: 1px solid #f6bb9e;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* .entryBtns input[type = "submit"]{
+    background-color: #fadccc;
+} */
+
+.entryBtns input:hover{
+    background-color: #fadccc;
+}

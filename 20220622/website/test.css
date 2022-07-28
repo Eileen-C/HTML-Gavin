@@ -145,7 +145,7 @@
     clear: both;
 } */
 
-.style1{
+/* .style1{
     font-size: 0.5em;
     vertical-align: top;
 }
@@ -168,4 +168,8 @@
 .style5{
     font-size: 0.5em;
     vertical-align: middle;
+} */
+
+h2 ~ p{
+    color: red;
 }
