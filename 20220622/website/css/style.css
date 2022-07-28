@@ -13,7 +13,10 @@ body{
 
 /*連結顏色設定*/
 a{
-    color: #FF0000;
+    color: #ff705b;
+}
+a:hover{
+    color: #ff715bb6;
 }
 
 /*頁首,導覽,頁尾的共通設定*/
@@ -156,11 +159,15 @@ a[href= "#"]::after{
 }
 
 /* 表格設定 */
+.red{
+    color: red;
+}
 .entryTable{
     width: 100%;
     border: 1px solid #f6bb9e;
     border-collapse: collapse;
     margin-bottom: 30px;
+    line-height: 2;
 }
 
 .entryTable caption{
@@ -212,4 +219,18 @@ a[href= "#"]::after{
 
 .entryBtns input:hover{
     background-color: #fadccc;
+}
+
+/* plants頁面設定 */
+ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+#plantsIntro h4{
+    color: #ff705b;
+    background:#fbf9cc;
+    padding: 10px;
+    box-shadow: 0 0 5px 1px #ff705b inset;
+    border-radius: 10px;
+    margin: 15px 0px;
 }

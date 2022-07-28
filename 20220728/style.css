@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+*{
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+}
+
+/*視窗背景色設定*/
+body{
+    /* background-color: #fbf9cc;
+    background-image: url(./images/bg.png);
+    background-repeat: repeat-x; */
+    background: #fbf9cc url(./images/bg.png) repeat-x;
+}
+
+/*連結顏色設定*/
+a{
+    color: red;
+}
+
+/*頁首,導覽,頁尾的共通設定*/
+header, nav, footer{
+    text-align: center;
+}
+
+
+/*導覽樣式設定*/
+.menu li{
+    display: inline-block;
+    /* border: 1px solid red; */
+    width: 200px;
+    margin: 0 10px;
+}
+
+.menu a{
+    background-color: #6fbb9a;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+/*頁面標題設定*/
+@font-face {
+    font-family: CevicheOne-Regular;
+    src: url(./CevicheOne-Regular.ttf)
+}
+
+h1{
+    /* background-color: #5fae8c; */
+    background: linear-gradient(to bottom, #6bb897, #4a9a78);
+    color: white;
+    width: 300px;
+    padding: 30px;
+    margin: 40px auto;
+    border: 5px solid #95dbbd;
+    border-radius: 50%;
+    font-size: 300%;
+    text-align: center;
+    line-height: 1em;
+    font-family: CevicheOne-Regular;
+    text-shadow: 1px 1px black;
+    box-shadow: 0 0 10px black;
+}
+
+/*次標題設定*/
+.h{
+    color: #73bb9b;
+    border: 1px dotted #73bb9b;
+    border-left: 10px solid #d0e35b;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+}
+
+/*小標題設定*/
+.h-sub{
+    color: #ff705b;
+    background-color: #fbf9cc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #ffbab0 inset;
+}
+
+.h-sub span{
+    font-weight: normal;
+}
+
+/*內容區塊邊框設定*/
+#content{
+    width: 960px;
+    background-color: #fff;
+    margin: 50px auto;
+    border: 1px solid #f9d0bc;
+    padding: 40px 60px;
+}
+
+/*「更多介紹」連結設定*/
+.more{
+    text-align: right;
+}
+
+.more::after{
+    content: url(./images/ico_arrow.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/*連結圖示設定*/
+a[href^="mailto:"]::after{
+    content: url(./images/ico_mail.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+a[href*="tcnr"]::after{
+    content: url(./images/ico_blank.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/*區塊間分隔*/
+#content > section + section{
+    margin-top: 100px;
+}
+
+/*文繞圖設定*/
+.imgL{
+    float: left;
+    margin-right: 20px;
+}
+
+.imgR{
+    float: right;
+    margin-left: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*圓形圖片設定*/
+.img-R{
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+/*表格設定*/
+.entryTable{
+    width: 100%;
+    border: 2px solid #f6bb9e;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.entryTable caption{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.entryTable th,
+.entryTable td{
+    border: 1px solid #f6bb9e;
+    padding: 10px 20px;
+}
+
+.entryTable th{
+    background-color: #ffeeee;
+    text-align: left;
+    width: 10em;
+}
+
+/*表單文字欄位設定*/
+.entryTable input[type="text"],
+.entryTable input[type="email"],
+.entryTable textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    font-size: 1em;
+}
+
+/*按鈕設定*/
+.entryBtns{
+    text-align: center;
+}
+
+.entryBtns input{
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    margin: 0 10px;
+    border: 1px solid #f6bb9e;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* .entryBtns input[type="submit"]{
+    background-color: #fadccc;
+} */
+
+.entryBtns input:hover{
+    background-color: #fadccc;
+}

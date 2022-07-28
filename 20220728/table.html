@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Gavin">
+  <meta name="robots" content="index, nofollow">
+  <title>Gavin's Web</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Gavin's<br>Web</h1>
+    <p>曬一下你家的可愛貓主子吧♪</p>
+  </header>
+
+  <main id="content">      
+    <form id="entryForm" action="#" method="post">
+      <p><strong><span class="require">*</span>為必填項目。</strong></p>
+      <table class="entryTable">
+        <caption>貓主子資料</caption>
+        <tr>
+          <th>主子名 *</th>
+          <td><input type="text" name="cat-name" required autofocus ></td>
+        </tr>
+        <tr>
+          <th>年齡 *</th>
+          <td>
+            <select name="age" required>
+              <option value="" selected>請選擇</option>
+              <option value="0">未滿1歲</option>
+              <option value="1">1〜5歲</option>
+              <option value="2">6〜10歲</option>
+              <option value="3">11〜15歲</option>
+              <option value="4">16〜20歲</option>
+              <option value="5">20歲以上</option>
+              <option value="6">不明</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>性別 *</th>
+          <td>
+            <input type="radio" name="sex" id="male" value="男生" checked required>
+            <label for="male">男生</label>
+            <input type="radio" name="sex" id="female" value="女生" required>
+            <label for="female">女生</label>
+          </td>
+        </tr>
+        <tr>
+          <th>最愛的食物</th>
+          <td>
+            <input type="checkbox" name="favorite" id="favo1" value="魚">
+            <label for="favo1">魚</label>
+            <input type="checkbox" name="favorite" id="favo2" value="肉">
+            <label for="favo2">肉</label>
+            <input type="checkbox" name="favorite" id="favo3" value="乾飼料">
+            <label for="favo3">乾飼料</label>
+            <input type="checkbox" name="favorite" id="favo4" value="貓罐頭">
+            <label for="favo4">貓罐頭</label>
+            <input type="checkbox" name="favorite" id="favo5" value="肉泥">
+            <label for="favo5">肉泥</label>
+            <input type="checkbox" name="favorite" id="favo6" value="其它">
+            <label for="favo6">其它</label>
+          </td>
+        </tr>
+        <tr>
+          <th>照片 *</th>
+          <td><input type="file" name="photo" required></td>
+        </tr>
+      </table>
+      <table class="entryTable">
+        <caption>貓奴資料</caption>
+        <tr>
+          <th>奴才名 *</th>
+          <td>
+            <input type="text" name="name" placeholder="咖啡" required>
+            <small>※可用暱稱</small>
+          </td>
+        </tr>
+        <tr>
+          <th>E-Mail *</th>
+          <td>
+            <input type="email" name="email" placeholder="sample@gmail.com" required>
+            <small>※請輸入半形文字</small>
+          </td>
+        </tr>
+        <tr>
+          <th>留言</th>
+          <td><textarea name="comment" rows="4" cols="40"></textarea></td>
+        </tr>
+      </table>
+      <div class="entryBtns">
+        <input type="reset" value="清除重填">
+        <input type="submit" value="送出">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p><small>Copyright © Gavin's Web All Rights Reserved.</small></p>
+  </footer>
+</body>
+
+</html>
