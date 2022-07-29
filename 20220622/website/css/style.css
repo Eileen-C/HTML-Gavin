@@ -8,7 +8,7 @@
 
 /*視窗背景色設定*/
 body{
-    background: #fbf9cc url(/images/bg.png) repeat-x;
+    background: #fbf9cc url(../images/bg.png) repeat-x;
 }
 
 /*連結顏色設定*/
