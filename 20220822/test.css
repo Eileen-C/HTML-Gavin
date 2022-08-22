@@ -1,0 +1,18 @@
+@keyframes myanimation{
+    0% {background-color: red; left: 10px; top: 10px;}
+    25% {background-color: yellow; left: 310px; top: 10px;}
+    50% {background-color: blue; left: 310px; top: 210px;}
+    75% {background-color: green; left: 10px; top: 210px;}
+    100% {background-color: red; left: 10px; top: 10px;}
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border: 1px dotted black;
+    text-align: center;
+    line-height: 100px;
+    /* border-radius: 50%; */
+    position: absolute;
+    animation: myanimation 4s ease-in-out alternate infinite;
+}
