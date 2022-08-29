@@ -173,3 +173,15 @@
 h2 ~ p{
     color: red;
 }
+
+/* 20220829 */
+/* @media screen and (min-width: 300px) and (max-width: 500px) {
+    body{
+        background-color: black;
+    }
+} */
+/* @media screen and (orientation: portrait) {
+    body{
+        background-color: black;
+    }
+} */
