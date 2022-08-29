@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* @keyframes myanimation{
+=======
+@keyframes myanimation{
+>>>>>>> 6e7c63eeb2cbe8b862235acf8c80bc0bac658d3a
     0% {background-color: red; left: 10px; top: 10px;}
     25% {background-color: yellow; left: 310px; top: 10px;}
     50% {background-color: blue; left: 310px; top: 210px;}
@@ -15,6 +19,7 @@
     /* border-radius: 50%; */
     position: absolute;
     animation: myanimation 4s ease-in-out alternate infinite;
+<<<<<<< HEAD
 } */
 
 /* 20220829 */
@@ -142,4 +147,6 @@ table{
     .m-none{
         display: none;
     }
+=======
+>>>>>>> 6e7c63eeb2cbe8b862235acf8c80bc0bac658d3a
 }
