@@ -1,0 +1,88 @@
+ @charset "UTF-8";
+/* CSS Document */
+
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  margin: 20px;
+}
+section {
+  margin: 20px 0;
+}
+
+.flex{
+  list-style-type: none;
+  background-color: #ffffeb;
+  border: 1px solid #cccccc;
+  display: flex;
+  padding: 20px;
+}
+
+.flex li{
+  width: 100px;
+  /* height: 150px; */
+  background-color: #80ceff;
+  border: 2px solid #666666;
+  padding: 10px;
+}
+
+
+/*justify-content*/
+.no2 .flex{
+  justify-content: start;
+  justify-content: end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+/*aling-items*/
+
+.no3 .flex .fzL{
+  font-size: 2em;
+}
+
+.no3 .flex{
+  /* 預設為stretch，占滿整個版面 */
+  align-items: stretch;
+  align-items: start;
+  align-items: end;
+  align-items: center;
+  /* flex-start或flex-end以最大文字為對齊基準點 */
+  align-items: flex-start;
+  align-items: flex-end;
+}
+
+/*flex-wrap*/
+.no4 .flex{
+  /* 預設值為nowrap */
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+}
+
+
+/*align-content*/
+.no5 .flex{
+  flex-wrap: wrap;
+  height: 400px;
+  /* stretch為預設值，占滿整個高度 */
+  align-content: stretch;
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+}
+
+/*flex-direction*/
+.no6 .flex{
+  /* 預設值為row */
+  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
+}

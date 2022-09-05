@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  margin: 20px;
+}
+section {
+  margin: 20px 0;
+}
+
+.flex{
+  list-style-type: none;
+  background-color: #ffffeb;
+  border: 1px solid #cccccc;
+  display: flex;
+  padding: 20px;
+}
+
+.flex li{
+  width: 100px;
+  /* height: 150px; */
+  background-color: #80ceff;
+  border: 2px solid #666666;
+  padding: 10px;
+}
+
+/* align-self */
+.no7 .flex li:nth-child(1){
+  /* 預設值 */
+  align-self: stretch;
+}
+.no7 .flex li:nth-child(2){
+  align-self: flex-start;
+}
+.no7 .flex li:nth-child(3){
+  align-self: flex-end;
+}
+.no7 .flex li:nth-child(4){
+  align-self: center;
+}
+.no7 .flex li:nth-child(5){
+  align-self: baseline;
+}
+
+/* order */
+.no8 .flex li:nth-child(1){
+  /* 預設為0 */
+  order: 2;
+}
+.no8 .flex li:nth-child(2){
+  /* 預設為0 */
+  order: 2;
+}
+.no8 .flex li:nth-child(3){
+  /* 預設為0 */
+  order: 0;
+}
+.no8 .flex li:nth-child(4){
+  /* 預設為0 */
+  order: 1;
+}
+.no8 .flex li:nth-child(5){
+  /* 預設為0 */
+  order: 0;
+}
+/* flex-grow */
+.no9 .flex.grow1 li:nth-child(1){
+  width: 200px;
+  flex-grow: 3;
+}
+.no9 .flex.grow1 li:nth-child(2){
+  width: 400px;
+  flex-grow: 1;
+}
+
+.no9 .flex.grow2 li:nth-child(2){
+  width: auto;
+  background: #ffd800;
+  flex-grow: 1;
+}
+
+/* flex-shrink */
+.no10 .flex li:nth-child(1){
+  width: 200px;
+  flex-shrink: 1;
+}
+.no10 .flex li:nth-child(2){
+  width: 400px;
+  flex-shrink: 3;
+}
+
+/* flex-basis */
+.no11 .flex{
+  flex-direction: column;
+}
+
+.no11 .flex li:nth-child(1){
+  width: 200px;
+}
+.no11 .flex li:nth-child(2){
+  flex-basis: 200px;
+}

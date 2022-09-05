@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+  margin:0;
+  padding:0;
+}
+ul {
+  list-style: none;
+}
+
+#wrap{
+  background-color: beige;
+  width: 800px;
+}
+
+#header{
+  background-color: pink;
+}
+
+#contents{
+  background-color: orange;
+  width: 580px;
+  float: left;
+  padding: 5px;
+  /* border: 3px solid orange; */
+}
+
+#main{
+  background-color: lightgreen;
+  width: 300px;
+  float: right;
+}
+
+#side{
+  background-color: skyblue;
+  width: 260px;
+  margin-right: 20px;
+  float: left;
+}
+
+#navi{
+  background-color: plum;
+  width: 200px;
+  float: right;
+}
+
+#footer{
+  background-color: gold;
+  clear: both;
+}

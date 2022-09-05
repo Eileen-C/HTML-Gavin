@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  margin: 20px;
+}
+section {
+  margin: 20px 0;
+}
+ul {
+  list-style: none;
+}
+.wrap {
+  margin: 50px;
+}
+.flex {
+  padding: 20px;
+  border: 1px solid #e7e7e7;
+  background: #ffffeb;
+}
+.flex li {
+  width: 100px;
+  padding: 15px;
+  border: 2px solid #666;
+  background: #80ceff;
+}
+
+/*flexbox版面適用*/
+.flex {
+  display: flex;
+}
+
+/*justify-content*/
+.no2 .flex {
+  justify-content: flex-start; /*預設值*/
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+}
+
+/*aling-items*/
+.no3 .flex .fzL {
+  font-size: 3em;
+}
+.no3 .flex {
+  align-items: stretch; /*預設值*/
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: baseline;
+}
+
+/*flex-wrap*/
+.no4 .flex {
+  flex-wrap: nowrap; /*預設值*/
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+}
+
+/*align-content*/
+.no5 .flex {
+  height: 300px;
+  flex-wrap: wrap;
+  align-content: stretch; /*預設值*/
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-around;
+  align-content: space-between;
+}
+
+/*flex-direction*/
+.no6 .flex {
+  flex-direction: row; /*預設值*/
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
+}
+

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+  margin:0;
+  padding:0;
+}
+
+ul{
+  list-style: none;
+}
+
+
+#wrap{
+  width: 960px;
+  margin: 0 auto;
+  background-color: beige;
+}
+
+#header{
+  margin-bottom: 20px;
+  background-color: lightpink;
+}
+
+#footer{
+  background-color: gold;
+  clear: both;
+}
+
+.box li{
+  float: left;
+  /* margin-right: 20px; */
+  margin-bottom: 20px;
+}
+
+/* 子元素與法；設定每4個li一組，每組右邊界為0 */
+/* .box li:nth-child(4n){
+  margin-right: 0;
+} */
+
+/* 或是針對li設定每4個一組，除每組的第4個以外，都有右邊界20px */
+.box li:not(:nth-child(4n)){
+  margin-right: 20px;
+}
